@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Calculadora</title>
+    <script src="./assets/script/script.js"></script>
+    <script src="https://kit.fontawesome.com/6a1ee1d231.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <!--Inicio do cabeçalho da calculadora -->
+        <header id="cabecalho" class="cabecalho">
+            <h1 id="resultado" class="cabecalho__resultado"></h1>
+        <p id="operacao" class="cabecalho__operacao"></p>
+        </header>
+        <!--Final do cabeçalho da calculadora -->
+        <!--Teclado -->
+    
+            <div id="botao">
+                <button id="btn_ac" class="botao_maior2" onclick="limparTela()">AC</button>
+                <button id="btn_x" class="botao_pequeno texto_laranja" onclick="apagarNumero()"><i class="fa-solid fa-delete-left"></i></button>
+                <button id="btn_divisao" class="botao_pequeno texto_laranja" onclick="inserirOperador('/')">÷</button>
+
+
+                <button id="btn_7" class="botao_pequeno" onclick="inserirNumero(7)">7</button>
+                <button id="btn_8" class="botao_pequeno" onclick="inserirNumero(8)">8</button>
+                <button id="btn_9" class="botao_pequeno" onclick="inserirNumero(9)">9</button>
+                <button id="btn_multiplicar" class="botao_pequeno texto_laranja" onclick="inserirOperador('*')">x</button>
+                
+
+                <button id="btn_4" class="botao_pequeno" onclick="inserirNumero(4)">4</button>
+                <button id="btn_5" class="botao_pequeno" onclick="inserirNumero(5)">5</button>
+                <button id="btn_6" class="botao_pequeno" onclick="inserirNumero(6)">6</button>
+                <button id="btn_subtracao" class="botao_pequeno texto_laranja" onclick="inserirOperador('-')">-</button>
+                    
+                    
+                <button id="btn_1" class="botao_pequeno" onclick="inserirNumero(1)">1</button>
+                <button id="btn_2" class="botao_pequeno" onclick="inserirNumero(2)">2</button>
+                <button id="btn_3" class="botao_pequeno" onclick="inserirNumero(3)">3</button>
+                <button id="btn_adicao" class="botao_pequeno texto_laranja" onclick="inserirOperador('+')">+</button>
+
+                    
+                <button id="btn_0" class="botao_pequeno" onclick="inserirNumero(0)">0</button>
+                <button id="btn_ponto" class="botao_pequeno" onclick="inserirOperador('.')">.</button>
+
+                <button id="btn_igual" class="botao_maior" onclick="calcular()">=</button>
+            </div>
+    </div>
+    
+</body>
+</html>
